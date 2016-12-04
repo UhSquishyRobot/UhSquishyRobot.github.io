@@ -1,3 +1,5 @@
+/* Home Page */
+
 #homebody {
   background: #D2E1DF;
 }
@@ -23,6 +25,8 @@ footer {
   font-size: 1em;
   font-family: Courier;
 }
+
+/* Suggestion Page */
 
 #suggbody {
   background-image: url(images/PragueBridge.jpg);
