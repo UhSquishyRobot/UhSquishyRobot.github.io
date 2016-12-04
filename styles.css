@@ -39,17 +39,22 @@ h1, h3 {
   width: 70%;
 }
 
+@media screen and (max-width: 859px){
+  #favtable {
+    width: 95%;
+    padding-right: 5px;
+  }
+}
+
 /* Suggestion Page */
 
 #suggbody {
   background-image: url(images/PragueBridge.jpg);
 }
 
-@media screen and (max-width: 859px){
-  #favtable {
-    width: 95%;
-    padding-right: 5px;
-  }
+h2 {
+  font-family : Palatino;
+  font-size: 2em;
 }
 
 
