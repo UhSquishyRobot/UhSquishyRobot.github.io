@@ -41,6 +41,13 @@ h1, h3 {
   background-image: url(images/PragueBridge.jpg);
 }
 
+@media screen and (max-width: 859px){
+  #favtable {
+    width: 95%;
+    padding-right: 5px;
+  }
+}
+
 
 /* General */
 
