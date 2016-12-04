@@ -26,8 +26,14 @@ footer {
   font-family: Courier;
 }
 
+h1, h3 {
+  font-family: Palatino;
+}
+
+
 /* Suggestion Page */
 
 #suggbody {
   background-image: url(images/PragueBridge.jpg);
 }
+
