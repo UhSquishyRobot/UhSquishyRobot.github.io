@@ -1,3 +1,10 @@
 body {
   background: #D2E1DF;
 }
+
+#favtable {
+  border: 3px solid #62808D;
+  padding-left: 14px;
+  width: 830px;
+  padding-bottom: 12px;
+}
