@@ -41,3 +41,9 @@ h1, h3 {
   background-image: url(images/PragueBridge.jpg);
 }
 
+
+/* General */
+
+a.links:visited {
+  color: #476DD5;
+}
