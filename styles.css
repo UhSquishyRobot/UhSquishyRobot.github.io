@@ -1,3 +1,65 @@
-body {
-  background: blue;
+/* Home Page */
+
+#homebody {
+  background: #D2E1DF;
+}
+
+#favtable {
+  border: 3px solid #62808D;
+  padding-left: 14px;
+  width: 830px;
+  padding-bottom: 12px;
+}
+
+#items {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 30%;
+}
+
+footer {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  font-size: 1em;
+  font-family: Courier;
+}
+
+h1, h3 {
+  font-family: Palatino;
+}
+
+.words {
+  font-family: Verdana;
+  font-size: .9em;
+}
+
+.image {
+  width: 70%;
+}
+
+@media screen and (max-width: 859px){
+  #favtable {
+    width: 95%;
+    padding-right: 5px;
+  }
+}
+
+/* Suggestion Page */
+
+#suggbody {
+  background-image: url(images/PragueBridge.jpg);
+}
+
+h2 {
+  font-family : Palatino;
+  font-size: 2em;
+}
+
+
+/* General */
+
+a.links:visited {
+  color: #476DD5;
 }
