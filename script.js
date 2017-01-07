@@ -10,6 +10,10 @@
 
 function randomSentence(){
   var integer = document.getElementById('a').value;
+  if (integer > 300) {
+    alert("Don't wanna crash your browser now!");
+  }
+  else {
   array = []
 
   var alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -27,6 +31,7 @@ function randomSentence(){
   }
   var crumbles = array;
   alert(crumbles);
+}
 }
 
 
