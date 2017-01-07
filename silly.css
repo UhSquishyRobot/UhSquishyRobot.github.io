@@ -10,3 +10,12 @@
 h1 {
   color: #6243DC;
 }
+
+#customers {
+  padding-top: 50px;
+  padding-left: 60px;
+}
+
+img {
+  opacity: 0.9;
+}
