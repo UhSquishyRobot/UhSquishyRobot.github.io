@@ -1,0 +1,16 @@
+/* Stupid Program */
+#buggbody {
+  background-image: url(images/doritos.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #D2E1DF;
+}
+
+h1 {
+  color: #6243DC;
+}
+
+p {
+  color: #6243DC;
+}
