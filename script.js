@@ -10,7 +10,10 @@
 
 function randomSentence(){
   var integer = document.getElementById('a').value;
-  if (integer > 300) {
+  if (integer == 0){
+    alert("You didn't enter nuffin ya muffin");
+  }
+  else if (integer > 300) {
     alert("Don't wanna crash your browser now!");
   }
   else {
