@@ -48,16 +48,22 @@ var wins = 0
 var compWins = 0
 
 var rounds = 2  
-while (rounds % 2 === 0) {
+while (true) {
       rounds = prompt("How many rounds would you like to play?")
-      if (rounds % 2 === 0) {
+      if (isNaN(rounds)) {
+        alert("Please enter only digits");
+      }
+      else if (rounds % 2 === 0) {
         alert("Please enter only odd numbers!");
+      }
+      else {
+        break;
       }
     }
 
 var compare = function (choice1, choice2) {
     if (choice1 === choice2) {
-        alert ("The result is a tie!");
+        alert ("It's a draw!");
     }
     else if (choice1 === "rock") {
         if (choice2 === "scissors") {
@@ -99,7 +105,7 @@ var compare = function (choice1, choice2) {
 for (var counter = 0; counter < rounds; counter++) {
 
     while (true) {
-      var userChoice = prompt("Do you choose Rock, Paper or Scissors?").toLowerCase();
+      var userChoice = prompt("Rock? Paper? Scissors?").toLowerCase();
         if ((userChoice === "rock") || (userChoice === "paper") || (userChoice === "scissors")) {
           break;
         }
@@ -108,19 +114,23 @@ for (var counter = 0; counter < rounds; counter++) {
         }
       }
       
-      var randomNum = Math.random();
-      if (randomNum < 0.34) {
-      computerChoice = "rock";
+  var playerTWO = function(){
+      var randomNum = (~~((Math.random() * 3) +1))
+      
+      if (randomNum === 1) {
+        computerChoice = "rock";
       }
-      else if (randomNum < 0.67) {
-        computerChoice = "paper";
+      else if (randomNum === 2) {
+      computerChoice = "paper";
       } 
       else {
       computerChoice = "scissors";
       }
+      return computerChoice;
+    }
       
-
-compare(userChoice, computerChoice)
+var computer = playerTWO();
+compare(userChoice, computer);
 }
 
 if (wins > compWins) {
@@ -130,14 +140,18 @@ else if (wins < compWins) {
   alert("COMPUTER OVERLORD WINS!!!");
 }
 else {
-  alert("TIE BREAKER!!!!")
+  alert("LIGHTNING ROUUUUUUND!!!!")
   while (wins === compWins) {
-    input = prompt("rock paper scissors");
-    if (input !== computerChoice) {
-      alert("we have a winner");
-      wins++;
-    }
+    input = prompt("Rock/Paper/Scissors");
+    var lightning = playerTWO();
+    compare(input, lightning);
   }
+  }
+  if (wins > compWins) {
+    alert("YOU WIN!!");
+  }
+  else if (wins < compWins) {
+    alert("COMPUTER OVERLORD WINS!!!");
 }
 }
 
