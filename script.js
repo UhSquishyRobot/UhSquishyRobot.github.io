@@ -37,5 +37,109 @@ function randomSentence(){
 }
 }
 
+//+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+//+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+//+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+
+var rockScissorsPaper = function() {
+
+var wins = 0
+var compWins = 0
+
+var rounds = 2  
+while (rounds % 2 === 0) {
+      rounds = prompt("How many rounds would you like to play?")
+      if (rounds % 2 === 0) {
+        alert("Please enter only odd numbers!");
+      }
+    }
+
+var compare = function (choice1, choice2) {
+    if (choice1 === choice2) {
+        alert ("The result is a tie!");
+    }
+    else if (choice1 === "rock") {
+        if (choice2 === "scissors") {
+            alert ("Computer Chose: Scissors\nRock Wins!");
+            wins++;
+        }
+        else {
+            alert ("Computer Chose: Paper\nPaper Wins");
+            compWins++;
+        }
+    }
+    else if (choice1 === "paper") {
+        if (choice2 === "rock") {
+            alert ("Computer Chose: Rock\nPaper Wins");
+            wins++;
+        }
+        else {
+            alert ("Computer Chose: Scissors\nScissors Wins");
+            compWins++;
+
+        }
+    }
+    else if (choice1 === "scissors") {
+        if (choice2 === "rock") {
+            alert ("Computer Chose: Rock\nRock Wins");
+            compWins++
+
+        }
+        else {
+            alert ("Computer Chose: Paper\nScissors Wins");
+            wins++;
+
+        }
+    }
+}
+
+
+
+for (var counter = 0; counter < rounds; counter++) {
+
+    while (true) {
+      var userChoice = prompt("Do you choose Rock, Paper or Scissors?").toLowerCase();
+        if ((userChoice === "rock") || (userChoice === "paper") || (userChoice === "scissors")) {
+          break;
+        }
+        else {
+          alert("Please enter only 'rock', 'paper', or 'scissors'");
+        }
+      }
+      
+      var randomNum = Math.random();
+      if (randomNum < 0.34) {
+      computerChoice = "rock";
+      }
+      else if (randomNum < 0.67) {
+        computerChoice = "paper";
+      } 
+      else {
+      computerChoice = "scissors";
+      }
+      
+
+compare(userChoice, computerChoice)
+}
+
+if (wins > compWins) {
+  alert("YOU WIN!!");
+}
+else if (wins < compWins) {
+  alert("COMPUTER OVERLORD WINS!!!");
+}
+else {
+  alert("TIE BREAKER!!!!")
+  while (wins === compWins) {
+    input = prompt("rock paper scissors");
+    if (input !== computerChoice) {
+      alert("we have a winner");
+      wins++;
+    }
+  }
+}
+}
+
 
 
