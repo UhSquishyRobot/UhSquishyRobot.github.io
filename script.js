@@ -54,7 +54,7 @@ while (true) {
         alert("Please enter only digits");
       }
       else if (rounds > 15) {
-        alert("Even robots get bored eventually.  Try a smaller number!")
+        alert("Even robots get bored eventually.  Try a smaller number!");
       }
       else if (rounds % 2 === 0) {
         alert("Please enter only odd numbers!");
