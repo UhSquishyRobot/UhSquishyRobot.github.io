@@ -39,8 +39,6 @@ var shift = function(gear) {
     knob.classList = gears[gear]['class'];   
 }
 
-console.log(knob);
-
 document.onkeyup = function(e) {
     switch(e.which) {
         case 49:
