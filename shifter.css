@@ -1,0 +1,52 @@
+.shift-boot {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    position: relative;
+}
+
+.cross-gutter {
+    position: absolute;
+    height: 20px;
+    width: 200px;
+    background-color: white;
+    left: 50px;
+    top: 140px;
+}
+
+.one-two {
+    height: 150px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    left: 50px;
+    top: 75px;
+}
+
+.three-four {
+    height: 150px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    left: 140px;
+    top: 75px;
+}
+
+.five-reverse {
+    height: 150px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    right: 50px;
+    top: 75px;
+}
+
+#knob {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: red;
+    position: absolute;
+    transition: top 1s, left 1s;
+}
+
