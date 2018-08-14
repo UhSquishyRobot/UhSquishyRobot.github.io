@@ -35,8 +35,6 @@ var shift = function(gear) {
     }
 
     currentGear = gear;
-
-    knob.classList = gears[gear]['class'];   
 }
 
 document.onkeyup = function(e) {
